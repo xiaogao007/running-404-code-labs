@@ -1,0 +1,22 @@
+{
+  "name": "typescript-7-migration",
+  "private": true,
+  "scripts": {
+    "check:ts7": "tsc --noEmit -p tsconfig.json",
+    "check:ts6": "tsc6 --noEmit -p tsconfig.json",
+    "check:no-types": "tsc --noEmit -p tsconfig.no-types.json",
+    "check:legacy": "tsc --noEmit -p tsconfig.legacy.json",
+    "emit:default-root": "tsc -p tsconfig.root-default.json",
+    "emit:explicit-root": "tsc -p tsconfig.root-explicit.json",
+    "inspect:ts6-api": "node scripts/inspect-ts6-api.cjs",
+    "inspect:ts7-api": "node scripts/inspect-ts7-api.cjs",
+    "verify:success": "node scripts/verify-success.cjs",
+    "verify:failures": "node scripts/verify-expected-failures.cjs",
+    "verify": "npm run verify:success && npm run verify:failures"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.2",
+    "@typescript/native": "npm:typescript@7.0.2",
+    "typescript": "npm:@typescript/typescript6@6.0.2"
+  }
+}

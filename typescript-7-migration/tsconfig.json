@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2025",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "rootDir": "./src",
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src"]
+}

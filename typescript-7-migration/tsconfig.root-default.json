@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2025",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "outDir": "./dist-root-default"
+  },
+  "include": ["src"]
+}
