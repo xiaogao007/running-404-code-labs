@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-security-patch-ci",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reproducible CI gate for Next.js security patch policy.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "check:policy": "node scripts/check-next-policy.mjs",
+    "test:policy": "node --test test/policy.test.mjs",
+    "audit:raw": "npm audit --omit=dev --audit-level=high --registry=https://registry.npmjs.org",
+    "audit:snapshot": "node scripts/audit-gate.mjs --input fixtures/npm-audit-2026-08-03.json --as-of 2026-08-03",
+    "audit:live": "node scripts/audit-gate.mjs",
+    "verify": "npm run check:policy && npm run test:policy && npm run audit:snapshot",
+    "ci:security": "npm run verify && npm run audit:live"
+  },
+  "dependencies": {
+    "next": "16.2.12"
+  }
+}

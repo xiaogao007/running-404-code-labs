@@ -1,0 +1,26 @@
+{
+  "vulnerabilities": {
+    "postcss": {
+      "name": "postcss",
+      "via": [
+        {
+          "url": "https://github.com/advisories/GHSA-6g55-p6wh-862q",
+          "severity": "high"
+        },
+        {
+          "url": "https://github.com/advisories/GHSA-r28c-9q8g-f849",
+          "severity": "high"
+        }
+      ]
+    },
+    "sharp": {
+      "name": "sharp",
+      "via": [
+        {
+          "url": "https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+          "severity": "high"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-08-03",
+  "releaseSource": "https://nextjs.org/blog/july-2026-security-release",
+  "supportSource": "https://nextjs.org/support-policy",
+  "allowedBranches": [
+    {
+      "major": 16,
+      "minor": 2,
+      "channel": "Active LTS",
+      "minimumPatchedVersion": "16.2.11"
+    },
+    {
+      "major": 15,
+      "minor": 5,
+      "channel": "Maintenance LTS",
+      "minimumPatchedVersion": "15.5.21"
+    }
+  ]
+}

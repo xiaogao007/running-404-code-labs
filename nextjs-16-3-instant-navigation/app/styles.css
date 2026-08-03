@@ -1,0 +1,36 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  background: #f5f6f8;
+  color: #16181d;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  box-sizing: border-box;
+  width: min(680px, calc(100% - 32px));
+  margin: 64px auto;
+  padding: 24px;
+  border: 1px solid #d9dde5;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.eyebrow {
+  color: #5f6570;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+a {
+  color: #075fcc;
+}

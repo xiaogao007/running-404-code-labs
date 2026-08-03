@@ -7,15 +7,20 @@
 | 目录 | 主题 | 运行时 | 状态 |
 | --- | --- | --- | --- |
 | [`typescript-7-migration`](./typescript-7-migration/) | TypeScript 7 迁移与 6/7 双版本验证 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`webmcp-agent-tools`](./webmcp-agent-tools/) | WebMCP 结构化工具的类型与应用层行为 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`nextjs-security-patch-ci`](./nextjs-security-patch-ci/) | Next.js 安全版本、锁文件与依赖审计门禁 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`nextjs-16-3-instant-navigation`](./nextjs-16-3-instant-navigation/) | Next.js 16.3 Preview 即时导航与 App Shell | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 
 ## 使用方式
 
 ```bash
 git clone https://github.com/xiaogao007/running-404-code-labs.git
-cd running-404-code-labs/typescript-7-migration
+cd running-404-code-labs/<实验目录>
 npm ci
 npm run verify
 ```
+
+个别实验还有浏览器安装或实时安全检查等附加命令，请先阅读对应目录的 `README.md`。
 
 ## 目录约定
 
