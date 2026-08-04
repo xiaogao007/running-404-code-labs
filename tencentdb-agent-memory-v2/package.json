@@ -1,0 +1,16 @@
+{
+  "name": "tencentdb-agent-memory-v2-contract-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Credential-free contract checks for TencentDB Agent Memory v3 TypeScript SDK",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "verify": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@tencentdb-agent-memory/memory-sdk-ts-v2": "1.0.0-beta.2"
+  }
+}
