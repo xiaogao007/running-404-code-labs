@@ -11,6 +11,7 @@
 | [`nextjs-security-patch-ci`](./nextjs-security-patch-ci/) | Next.js 安全版本、锁文件与依赖审计门禁 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`nextjs-16-3-instant-navigation`](./nextjs-16-3-instant-navigation/) | Next.js 16.3 Preview 即时导航与 App Shell | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 | [`tencentdb-agent-memory-v2`](./tencentdb-agent-memory-v2/) | TencentDB Agent Memory v3 TypeScript SDK 请求契约 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`playwright-162-agent-loop`](./playwright-162-agent-loop/) | Playwright 1.62 MCP、CLI 与 AbortSignal 测试闭环 | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 
 ## 使用方式
 

@@ -1,0 +1,14 @@
+{
+  "name": "playwright-162-agent-loop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify.mjs",
+    "test": "playwright test --reporter=line",
+    "mcp:help": "playwright mcp --help"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "playwright": "1.62.1"
+  }
+}
