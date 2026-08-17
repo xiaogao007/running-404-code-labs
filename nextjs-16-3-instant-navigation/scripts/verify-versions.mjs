@@ -11,7 +11,7 @@ const installedNext = JSON.parse(
   ),
 )
 
-assert.equal(packageJson.dependencies.next, '16.3.0-preview.10')
-assert.equal(installedNext.version, '16.3.0-preview.10')
+assert.equal(packageJson.dependencies.next, '16.3.0')
+assert.equal(installedNext.version, '16.3.0')
 
-console.log('Verified Next.js 16.3.0-preview.10 is installed.')
+console.log('Verified Next.js 16.3.0 is installed.')

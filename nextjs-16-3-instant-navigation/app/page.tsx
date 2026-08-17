@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function HomePage() {
   return (
     <main>
-      <p className="eyebrow">Next.js 16.3 Preview lab</p>
+      <p className="eyebrow">Next.js 16.3 lab</p>
       <h1>Choose a product</h1>
       <p>
         Both links share the same dynamic filesystem route. Partial Prefetching

@@ -1,7 +1,7 @@
-# Next.js 16.3 Preview Instant Navigation Lab
+# Next.js 16.3 Instant Navigation Lab
 
 This lab accompanies an article about the opt-in Instant Navigations features in
-Next.js 16.3 Preview. It demonstrates a reusable route shell, Partial
+Next.js 16.3. It demonstrates a reusable route shell, Partial
 Prefetching, streamed dynamic content, and the official `instant()` Playwright
 helper.
 
@@ -9,12 +9,11 @@ helper.
 
 - Node.js 20.9 or newer (verified with Node.js 25.8.2)
 - npm 11.9.0
-- Next.js 16.3.0-preview.10
+- Next.js 16.3.0
 - React 19.2.8
 - Chromium installed through Playwright
 
-The preview package is pinned exactly because its APIs may change before the
-stable Next.js 16.3 release.
+The stable package is pinned exactly so the verification remains reproducible.
 
 ## Install
 
@@ -59,5 +58,5 @@ Open `http://localhost:3000`, then navigate between the two product URLs.
   to observe.
 - Actual prefetch requests happen in production. The test focuses on the shell
   visible at navigation time through the official testing helper.
-- Next.js 16.3 is a preview as of 2026-08-03. Recheck the API before production
-  adoption.
+- Instant Navigations require opt-in configuration in Next.js 16.3. Recheck the
+  migration guide and API before production adoption.
