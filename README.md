@@ -12,6 +12,7 @@
 | [`nextjs-16-3-instant-navigation`](./nextjs-16-3-instant-navigation/) | Next.js 16.3 即时导航与 App Shell | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 | [`tencentdb-agent-memory-v2`](./tencentdb-agent-memory-v2/) | TencentDB Agent Memory v3 TypeScript SDK 请求契约 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`playwright-162-agent-loop`](./playwright-162-agent-loop/) | Playwright 1.62 MCP、CLI 与 AbortSignal 测试闭环 | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
+| [`agent-plugins-1-frontend-quality`](./agent-plugins-1-frontend-quality/) | Agent Plugins 1.0 团队质量门禁、Schema 与路径安全 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 
 ## 使用方式
 

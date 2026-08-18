@@ -1,0 +1,16 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "frontend-quality-gate",
+  "version": "1.0.0",
+  "description": "A portable frontend quality gate for team Agent workflows.",
+  "author": {
+    "name": "404 Code Labs"
+  },
+  "repository": "https://github.com/xiaogao007/running-404-code-labs/tree/main/agent-plugins-1-frontend-quality",
+  "license": "MIT",
+  "keywords": [
+    "agent-plugins",
+    "frontend",
+    "quality-gate"
+  ]
+}
