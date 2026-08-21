@@ -14,6 +14,7 @@
 | [`playwright-162-agent-loop`](./playwright-162-agent-loop/) | Playwright 1.62 MCP、CLI 与 AbortSignal 测试闭环 | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 | [`agent-plugins-1-frontend-quality`](./agent-plugins-1-frontend-quality/) | Agent Plugins 1.0 团队质量门禁、Schema 与路径安全 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`nextjs-agent-approval-idempotency`](./nextjs-agent-approval-idempotency/) | Agent 工具审批、拒绝与幂等状态机 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`feature-flag-configuration-governance`](./feature-flag-configuration-governance/) | Feature Flag 灰度、回滚与前端配置治理 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 
 ## 使用方式
 

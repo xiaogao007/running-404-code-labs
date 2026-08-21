@@ -1,0 +1,19 @@
+{
+  "name": "feature-flag-configuration-governance",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test dist/test/**/*.test.js",
+    "verify": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
