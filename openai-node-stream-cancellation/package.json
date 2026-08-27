@@ -1,0 +1,11 @@
+{
+  "name": "openai-node-stream-cancellation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node verify.mjs"
+  },
+  "dependencies": {
+    "openai": "7.7.0"
+  }
+}

@@ -17,6 +17,7 @@
 | [`nextjs-agent-approval-idempotency`](./nextjs-agent-approval-idempotency/) | Agent 工具审批、拒绝与幂等状态机 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`feature-flag-configuration-governance`](./feature-flag-configuration-governance/) | Feature Flag 灰度、回滚与前端配置治理 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`spec-coding-workflow`](./spec-coding-workflow/) | Spec Coding 规格、任务与状态机追踪 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
+| [`openai-node-stream-cancellation`](./openai-node-stream-cancellation/) | OpenAI Node SDK 7.7 Responses 流式取消与 SSE 连接关闭 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 
 ## 使用方式
 
