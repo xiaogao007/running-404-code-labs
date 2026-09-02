@@ -1,0 +1,13 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #18202a; background: #f5f7fa; }
+body { margin: 0; }
+main { max-width: 560px; margin: 0 auto; padding: 32px; }
+.eyebrow { color: #4263eb; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+h1 { margin: 8px 0; font-size: 28px; }
+.muted, .status, small { color: #667085; }
+.panel { display: grid; gap: 16px; margin-top: 24px; padding: 20px; background: white; border: 1px solid #dfe4ea; border-radius: 10px; }
+.panel > div { display: flex; justify-content: space-between; align-items: center; }
+.state { color: #667085; font-size: 12px; font-weight: 700; }
+.state.on { color: #087f5b; }
+button { width: fit-content; padding: 10px 14px; color: white; background: #4263eb; border: 0; border-radius: 6px; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+.status { min-height: 24px; margin-top: 16px; }

@@ -1,0 +1,26 @@
+{
+  "name": "mcp-apps-sandbox-state-consent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "verify": "npm run build && node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "1.7.5",
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "express": "5.1.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.4.1",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vite-plugin-singlefile": "2.2.0"
+  }
+}
