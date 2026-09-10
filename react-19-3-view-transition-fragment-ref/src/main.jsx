@@ -16,11 +16,17 @@ const cards = [
   { id: "boundary", eyebrow: "03 / Boundary", title: "把一组节点当成边界", body: "Fragment ref 可以对一组一级 DOM 子节点绑定事件、聚焦或建立观察。" },
 ];
 
+function recordTransitionEvent(phase, types) {
+  window.__reactTransitionEvents ??= [];
+  window.__reactTransitionEvents.push({ phase, types: [...types] });
+}
+
 function Card({ card }) {
   return (
     <ViewTransition
       name="release-card"
-      onEnter={(instance, types) => {
+      onUpdate={(instance, types) => {
+        recordTransitionEvent("update", types);
         const fromX = types.includes("forward") ? 28 : -28;
         const animation = instance.new.animate(
           [
@@ -28,17 +34,6 @@ function Card({ card }) {
             { opacity: 1, transform: "translateX(0)" },
           ],
           { duration: 260, easing: "cubic-bezier(.2,.8,.2,1)" },
-        );
-        return () => animation.cancel();
-      }}
-      onExit={(instance, types) => {
-        const toX = types.includes("forward") ? -28 : 28;
-        const animation = instance.old.animate(
-          [
-            { opacity: 1, transform: "translateX(0)" },
-            { opacity: 0, transform: `translateX(${toX}px)` },
-          ],
-          { duration: 180, easing: "ease-in" },
         );
         return () => animation.cancel();
       }}

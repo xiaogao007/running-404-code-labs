@@ -9,6 +9,9 @@ test("runs a directional React Transition update and changes the displayed card"
   await expect(page.getByTestId("release-card")).toContainText("让方向成为语义");
   await expect(page.getByTestId("transition-count")).toHaveText("已执行 1 次 Transition 更新");
   await expect(page.getByTestId("view-transition-support")).toContainText("浏览器 View Transition API：可用");
+  await expect.poll(() => page.evaluate(() => window.__reactTransitionEvents)).toEqual([
+    { phase: "update", types: ["forward"] },
+  ]);
 });
 
 test("attaches a click listener and focus operation to an explicit Fragment ref", async ({ page }) => {

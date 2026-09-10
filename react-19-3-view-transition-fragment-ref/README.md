@@ -2,7 +2,7 @@
 
 This lab accompanies the article **"React 19.3 正式发布：ViewTransition 和 Fragment Refs 值得升级吗？"**. It verifies two React 19.3 stable APIs:
 
-- A state update wrapped in `startTransition`, marked with `addTransitionType`, drives directional `<ViewTransition>` enter/exit animations.
+- A state update wrapped in `startTransition`, marked with `addTransitionType`, drives a directional `<ViewTransition>` update animation.
 - An explicit `<Fragment ref={...}>` attaches an event listener to its first-level DOM children and focuses the first focusable descendant, without adding a wrapper DOM element.
 
 ## Environment
@@ -21,7 +21,7 @@ npm ci
 npm run verify
 ```
 
-`npm run verify` builds the Vite app and then runs two Playwright browser tests. They verify that clicking "下一张" changes the card through a React Transition while Chromium exposes the View Transition API, and that an explicit Fragment ref receives a group click and moves focus to the first button.
+`npm run verify` builds the Vite app and then runs two Playwright browser tests. They verify that clicking "下一张" changes the card and that the ViewTransition update callback receives the `forward` type while Chromium exposes the View Transition API. They also verify that an explicit Fragment ref receives a group click and moves focus to the first button.
 
 ## Expected result
 
