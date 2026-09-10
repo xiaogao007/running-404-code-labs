@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>预期回调页</title>
+  </head>
+  <body>
+    <main>
+      <h1>预期 OAuth 回调页</h1>
+      <p>此页面仅发送虚拟授权码，不包含真实 token。</p>
+      <button id="send-valid">发送合法回调</button>
+      <button id="send-malformed">发送缺字段消息</button>
+    </main>
+    <script type="module" src="/src/callback.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>攻击来源</title>
+  </head>
+  <body>
+    <main>
+      <h1>模拟攻击页面</h1>
+      <p>它复用了同一个 popup 窗口，但来自不同 origin。</p>
+      <button id="send-attacker-message">发送伪造回调</button>
+    </main>
+    <script type="module" src="/src/attacker.js"></script>
+  </body>
+</html>
