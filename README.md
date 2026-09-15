@@ -20,6 +20,7 @@
 | [`openai-node-stream-cancellation`](./openai-node-stream-cancellation/) | OpenAI Node SDK 7.7 Responses 流式取消与 SSE 连接关闭 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`react-19-3-view-transition-fragment-ref`](./react-19-3-view-transition-fragment-ref/) | React 19.3 ViewTransition 与 Fragment ref | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 | [`postmessage-oauth-callback-security`](./postmessage-oauth-callback-security/) | OAuth popup 回调的 postMessage 安全契约 | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
+| [`ui-contract-generative-ui`](./ui-contract-generative-ui/) | 生成式 UI 的 Schema、设计令牌与静态降级契约 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 
 ## 使用方式
 
