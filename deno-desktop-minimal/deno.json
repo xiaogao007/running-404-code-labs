@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "verify": "deno run -A scripts/verify.ts"
+  },
+  "fmt": {
+    "lineWidth": 100
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}
