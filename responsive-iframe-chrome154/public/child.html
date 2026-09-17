@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="responsive-embedded-sizing" content="allow-origins=*">
+<style>body{margin:0;background:#eef6ff;font:16px/1.6 system-ui}.box{height:420px;padding:16px;box-sizing:border-box}.late{height:260px;background:#d6eaff;padding:16px;box-sizing:border-box}</style>
+<div class="box"><strong>加载时已有的 420px 内容</strong><p>父页面与子页面均授权后，iframe 会按初始布局溢出尺寸定高。</p></div>
+<script>setTimeout(() => document.body.insertAdjacentHTML('beforeend', '<div class="late">1 秒后加入的 260px 内容：当前设计不会再次触发原生定高。</div>'), 1000);</script>
+</html>

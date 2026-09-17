@@ -22,6 +22,7 @@
 | [`postmessage-oauth-callback-security`](./postmessage-oauth-callback-security/) | OAuth popup 回调的 postMessage 安全契约 | Node.js 25.8.2、npm 11.9.0、Chromium | 已验证 |
 | [`ui-contract-generative-ui`](./ui-contract-generative-ui/) | 生成式 UI 的 Schema、设计令牌与静态降级契约 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`deno-desktop-minimal`](./deno-desktop-minimal/) | Deno Desktop 最小页面、测试与 Windows 打包 | Deno 2.9.6、Windows 11 x64 | 已验证 |
+| [`responsive-iframe-chrome154`](./responsive-iframe-chrome154/) | Chrome 154 响应式 iframe、跨源双向授权与动态内容降级 | Node.js 25.8.2、Chrome 154 Beta | 已验证 |
 
 ## 使用方式
 

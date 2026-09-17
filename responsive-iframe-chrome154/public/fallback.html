@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<style>body{margin:0;background:#fff7e6;font:16px/1.6 system-ui}.box{height:420px;padding:16px;box-sizing:border-box}.late{height:260px;background:#ffe7ba;padding:16px;box-sizing:border-box}</style>
+<div class="box"><strong>ResizeObserver 降级方案</strong><p>异步内容加入后继续通知父页面。</p></div>
+<script>
+  const notify = () => parent.postMessage({ type: 'iframe:resize', height: document.documentElement.scrollHeight }, 'http://127.0.0.1:4173');
+  new ResizeObserver(notify).observe(document.body);
+  setTimeout(() => document.body.insertAdjacentHTML('beforeend', '<div class="late">1 秒后加入的 260px 内容，iframe 会继续变高。</div>'), 1000);
+</script>
+</html>

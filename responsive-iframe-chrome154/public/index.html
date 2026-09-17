@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>Responsive iframe lab</title>
+<style>
+  body { max-width: 900px; margin: 32px auto; font: 16px/1.6 system-ui; }
+  iframe { width: 100%; border: 2px solid #1677ff; frame-sizing: content-height; }
+  section { margin: 28px 0; }
+</style>
+<h1>Chrome 154 响应式 iframe 实验</h1>
+<section><h2>原生：跨源双向授权</h2><iframe id="native" src="http://127.0.0.1:4174/child.html"></iframe></section>
+<section><h2>传统降级：ResizeObserver + postMessage</h2><iframe id="fallback" src="http://127.0.0.1:4174/fallback.html"></iframe></section>
+<pre id="log">waiting…</pre>
+<script>
+  const fallback = document.querySelector('#fallback');
+  addEventListener('message', (event) => {
+    if (event.origin !== 'http://127.0.0.1:4174' || event.data?.type !== 'iframe:resize') return;
+    fallback.style.height = `${event.data.height}px`;
+  });
+  setInterval(() => {
+    const native = document.querySelector('#native');
+    document.querySelector('#log').textContent = JSON.stringify({ nativeHeight: native.clientHeight, fallbackHeight: fallback.clientHeight }, null, 2);
+  }, 250);
+</script>
+</html>
