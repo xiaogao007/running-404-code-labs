@@ -1,0 +1,10 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["."],
+  "locale": "zh-CN",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Form", "Scrollbar"],
+  "requiredCommands": ["verify"],
+  "commands": { "verify": "npm run verify" },
+  "evidence": { "geometryAndKeyboard": "verification-results.json" }
+}

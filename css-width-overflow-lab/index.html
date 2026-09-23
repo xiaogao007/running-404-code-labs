@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23006e86'/%3E%3Cpath d='M7 8v16M25 8v16M7 16h18' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <title>100% 为什么还会溢出？ · CSS 宽度实验室</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <p class="eyebrow">404 星球的猫 / CSS 宽度实验室</p>
+      <h1><span class="headline-number">100%</span><span>为什么还会溢出？</span></h1>
+      <p class="intro">先看盒子有没有缩，再看内容有没有越界。拨动开关，读真实的浏览器测量值。</p>
+    </header>
+
+    <main>
+      <section class="workbench" aria-labelledby="experiment-heading">
+        <div class="section-heading"><h2 id="experiment-heading">布局实验</h2><span class="section-tag">固定画布 720 px</span></div>
+        <div class="controls">
+          <fieldset><legend>布局方式</legend><div class="choice-row">
+            <label><input type="radio" name="layout" value="grid" checked> Grid</label>
+            <label><input type="radio" name="layout" value="flex"> Flex</label>
+          </div></fieldset>
+          <fieldset><legend>放入内容</legend><div class="choice-row">
+            <label><input type="radio" name="content" value="url"> 长链接</label>
+            <label><input type="radio" name="content" value="code" checked> 代码块</label>
+            <label><input type="radio" name="content" value="table"> 宽表格</label>
+          </div></fieldset>
+        </div>
+        <div class="switches">
+          <label class="switch"><input id="min-width" type="checkbox"><span><strong>允许 main 收缩</strong><code>min-width: 0</code></span></label>
+          <label class="switch" id="track-control"><input id="zero-track" type="checkbox" aria-describedby="track-help"><span><strong>轨道下限设为 0</strong><code>minmax(0, 1fr)</code></span></label>
+          <label class="switch"><input id="content-fix" type="checkbox"><span><strong id="content-fix-label">让代码块局部滚动</strong><code id="content-fix-code">overflow-x: auto</code></span></label>
+        </div>
+        <p class="help" id="track-help">轨道开关仅对 Grid 生效；Flex 使用 flex: 1 1 0。</p>
+        <div class="action-row"><button id="reset" type="button" onclick="window.labActions.reset()">复现溢出</button><button id="fix" type="button" class="primary" onclick="window.labActions.fix()">应用完整修复</button><p>观察下方青色边框与滚动区域。</p></div>
+
+        <div class="viewport" id="viewport" tabindex="0" role="region" aria-label="720 像素布局实验画布，可横向滚动">
+          <div class="ruler" aria-hidden="true"><span>侧栏 160 px</span><span>间距 16 px</span><span>main 可用 544 px</span></div>
+          <div class="lab" id="lab" data-layout="grid" data-kind="code">
+            <aside class="lab-sidebar"><span class="sidebar-brand">ORBIT</span><span class="sidebar-caption">后台布局样本</span><span class="sidebar-item active">内容管理</span><span class="sidebar-item">访问分析</span><span class="sidebar-item">项目设置</span><span class="sidebar-bottom">固定宽度 · 160 px</span></aside>
+            <section class="lab-main" id="lab-main" aria-label="实验中的主内容区">
+              <div class="sample-heading"><span>内容管理</span><code>width: 100%</code></div>
+              <p class="sample-caption" id="sample-caption">一行很长、保留空白的代码</p>
+              <div class="content-region" id="content-region" role="region" aria-label="样本内容；开启局部滚动后可用方向键滚动" tabindex="0"></div>
+            </section>
+          </div>
+        </div>
+
+        <dl class="measurements">
+          <div><dt>main 可用宽度</dt><dd><output id="available-width">—</output><span>px</span></dd></div>
+          <div><dt>main 边框盒宽度</dt><dd><output id="main-width">—</output><span>px</span></dd></div>
+          <div><dt>main scrollWidth</dt><dd><output id="main-scroll">—</output><span>px</span></dd></div>
+          <div><dt>main clientWidth</dt><dd><output id="main-client">—</output><span>px</span></dd></div>
+        </dl>
+        <div class="diagnosis" id="diagnosis" role="status" aria-live="polite" aria-atomic="true"></div>
+        <p class="help">scrollWidth 与 clientWidth 对比：前者包含溢出内容，后者包含内边距、排除边框。边框盒宽度与可用宽度对比。</p>
+        <p class="note" id="content-note"></p>
+        <details><summary>查看当前生效的关键 CSS</summary><pre class="current-css"><code id="current-css"></code></pre></details>
+      </section>
+
+      <section class="box-section" aria-labelledby="box-heading">
+        <div class="section-heading"><h2 id="box-heading">另一个原因：盒模型</h2><span class="section-tag">独立对照</span></div>
+        <p>同样是 width: 100%，如果它只覆盖内容区，左右 padding 和 border 还会继续往外加。</p>
+        <label class="box-switch"><input id="border-box" type="checkbox"> 改用 <code>box-sizing: border-box</code></label>
+        <div class="box-viewport" role="region" aria-label="320 像素盒模型实验，可横向滚动" tabindex="0"><div class="box-parent"><div id="box-sample" class="box-sample">父容器 320 px<br>padding 24 px × 2<br>border 2 px × 2</div></div></div>
+        <p id="box-result" class="box-result" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer>在实验画布里保留故障，在真实页面里找到原因。<span>原生 HTML · CSS · JavaScript</span></footer>
+  </div>
+</body>
+</html>

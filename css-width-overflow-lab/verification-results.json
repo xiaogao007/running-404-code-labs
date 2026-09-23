@@ -1,0 +1,241 @@
+{
+  "node": "v25.8.2",
+  "browser": "151.0.7922.34",
+  "checks": 127,
+  "results": [
+    {
+      "layout": "grid",
+      "kind": "url",
+      "broken": {
+        "available": 544,
+        "mainWidth": 1697.625,
+        "mainClient": 1694,
+        "mainScroll": 1694,
+        "regionClient": 1658,
+        "regionScroll": 1658,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 1662,
+        "regionClient": 504,
+        "regionScroll": 1644,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 504,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    },
+    {
+      "layout": "grid",
+      "kind": "code",
+      "broken": {
+        "available": 544,
+        "mainWidth": 1018.0625,
+        "mainClient": 1014,
+        "mainScroll": 1014,
+        "regionClient": 978,
+        "regionScroll": 978,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 982,
+        "regionClient": 504,
+        "regionScroll": 964,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 964,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    },
+    {
+      "layout": "grid",
+      "kind": "table",
+      "broken": {
+        "available": 544,
+        "mainWidth": 900,
+        "mainClient": 896,
+        "mainScroll": 896,
+        "regionClient": 860,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 878,
+        "regionClient": 504,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    },
+    {
+      "layout": "flex",
+      "kind": "url",
+      "broken": {
+        "available": 544,
+        "mainWidth": 720,
+        "mainClient": 716,
+        "mainScroll": 1662,
+        "regionClient": 680,
+        "regionScroll": 1644,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 1662,
+        "regionClient": 504,
+        "regionScroll": 1644,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 504,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    },
+    {
+      "layout": "flex",
+      "kind": "code",
+      "broken": {
+        "available": 544,
+        "mainWidth": 720,
+        "mainClient": 716,
+        "mainScroll": 982,
+        "regionClient": 680,
+        "regionScroll": 964,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 982,
+        "regionClient": 504,
+        "regionScroll": 964,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 964,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    },
+    {
+      "layout": "flex",
+      "kind": "table",
+      "broken": {
+        "available": 544,
+        "mainWidth": 720,
+        "mainClient": 716,
+        "mainScroll": 878,
+        "regionClient": 680,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "boxOnly": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 878,
+        "regionClient": 504,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "overflow"
+      },
+      "fixed": {
+        "available": 544,
+        "mainWidth": 544,
+        "mainClient": 540,
+        "mainScroll": 540,
+        "regionClient": 504,
+        "regionScroll": 860,
+        "documentClient": 1280,
+        "documentScroll": 1280,
+        "state": "contained"
+      }
+    }
+  ],
+  "coverage": [
+    "Chromium desktop 1280",
+    "720 / 390 / 320 CSS px",
+    "keyboard",
+    "reduced motion",
+    "forced colors"
+  ],
+  "limitations": [
+    "未验证 Firefox、Safari 或真实移动设备",
+    "不是完整 WCAG 合规审计",
+    "测量结果受浏览器与本机字体影响；断言依赖几何关系而非长文本绝对宽度"
+  ]
+}
