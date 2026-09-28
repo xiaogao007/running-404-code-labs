@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-28T13:33:40.594Z",
+  "browser": "151.0.7922.34",
+  "checks": 32,
+  "observations": [
+    {
+      "mode": "normal",
+      "initialMounted": 1200,
+      "windowFind": true
+    },
+    {
+      "mode": "cv",
+      "initialMounted": 1200,
+      "windowFind": true
+    },
+    {
+      "mode": "virtual",
+      "initialMounted": 3,
+      "windowFind": false
+    }
+  ],
+  "scope": "Chromium headless; window.find probe is not native Ctrl+F UI or screen-reader verification"
+}

@@ -1,0 +1,5 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>长页面渲染实验</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><p class="eyebrow">404 CODE LAB · 浏览器渲染实验</p><h1>同一份长页面，三种渲染方式</h1><p>比较初始布局、节点规模和远处内容的可达性。数据均为合成记录。</p>
+<nav aria-label="渲染模式"><a href="?mode=normal">普通渲染</a><a href="?mode=cv">content-visibility</a><a href="?mode=virtual">窗口化列表</a></nav>
+<div class="actions"><button id="jump" type="button" onclick="window.lab.jump()">定位到远处记录</button><button id="top" type="button" onclick="window.lab.top()">回到开头</button></div><p id="status" role="status"></p></header>
+<main id="list" aria-label="合成订单复核记录"></main><script type="module" src="/app.js"></script></body></html>
