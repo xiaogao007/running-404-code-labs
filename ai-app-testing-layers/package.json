@@ -1,0 +1,17 @@
+{
+  "name": "ai-app-testing-layers",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "verify": "node --test test/*.test.js",
+    "eval:live": "node scripts/eval-live.js"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.78",
+    "ai": "7.0.118",
+    "zod": "4.6.5"
+  }
+}

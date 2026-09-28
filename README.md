@@ -6,6 +6,7 @@
 
 | 目录 | 主题 | 运行时 | 状态 |
 | --- | --- | --- | --- |
+| [`ai-app-testing-layers`](./ai-app-testing-layers/) | AI 应用的状态测试、工具契约与真实模型冒烟评估 | Node.js 25.8.2、npm 11.9.0 | 16 项确定性测试通过；真实模型 10 次窄任务通过 |
 | [`typescript-7-migration`](./typescript-7-migration/) | TypeScript 7 迁移与 6/7 双版本验证 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`webmcp-agent-tools`](./webmcp-agent-tools/) | WebMCP 结构化工具的类型与应用层行为 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
 | [`nextjs-security-patch-ci`](./nextjs-security-patch-ci/) | Next.js 安全版本、锁文件与依赖审计门禁 | Node.js 25.8.2、npm 11.9.0 | 已验证 |

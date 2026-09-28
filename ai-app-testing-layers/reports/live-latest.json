@@ -1,0 +1,390 @@
+{
+  "recordedAt": "2026-09-28T12:29:36.950Z",
+  "modelId": "deepseek-flash",
+  "promptVersion": "orders-v1",
+  "promptSha256": "fe72611aa9915402538438149daeeab43fd69d7b33dec7409e1c71590257e910",
+  "temperature": 0,
+  "trialsPerCase": 2,
+  "node": "v25.8.2",
+  "rows": [
+    {
+      "caseId": "known",
+      "trial": 1,
+      "text": "{\"status\":\"ok\",\"orderId\":\"ORD-001\",\"amountCents\":12000}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-001"
+          },
+          "output": {
+            "status": "ok",
+            "orderId": "ORD-001",
+            "amountCents": 12000
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1252,
+      "usage": {
+        "inputTokens": 1041,
+        "inputTokenDetails": {
+          "noCacheTokens": 657,
+          "cacheReadTokens": 384
+        },
+        "outputTokens": 79,
+        "outputTokenDetails": {
+          "textTokens": 62,
+          "reasoningTokens": 17
+        },
+        "totalTokens": 1120
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "known",
+      "trial": 2,
+      "text": "{\"status\":\"ok\",\"orderId\":\"ORD-001\",\"amountCents\":12000}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-001"
+          },
+          "output": {
+            "status": "ok",
+            "orderId": "ORD-001",
+            "amountCents": 12000
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1320,
+      "usage": {
+        "inputTokens": 1042,
+        "inputTokenDetails": {
+          "noCacheTokens": 402,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 80,
+        "outputTokenDetails": {
+          "textTokens": 62,
+          "reasoningTokens": 18
+        },
+        "totalTokens": 1122
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "missing",
+      "trial": 1,
+      "text": "{\"status\":\"not_found\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-999"
+          },
+          "output": {
+            "status": "not_found"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1079,
+      "usage": {
+        "inputTokens": 1032,
+        "inputTokenDetails": {
+          "noCacheTokens": 392,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 80,
+        "outputTokenDetails": {
+          "textTokens": 61,
+          "reasoningTokens": 19
+        },
+        "totalTokens": 1112
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "missing",
+      "trial": 2,
+      "text": "{\"status\":\"not_found\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-999"
+          },
+          "output": {
+            "status": "not_found"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1787,
+      "usage": {
+        "inputTokens": 1029,
+        "inputTokenDetails": {
+          "noCacheTokens": 389,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 77,
+        "outputTokenDetails": {
+          "textTokens": 61,
+          "reasoningTokens": 16
+        },
+        "totalTokens": 1106
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "cross-tenant",
+      "trial": 1,
+      "text": "{\"status\":\"not_found\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-002"
+          },
+          "output": {
+            "status": "not_found"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1121,
+      "usage": {
+        "inputTokens": 1096,
+        "inputTokenDetails": {
+          "noCacheTokens": 456,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 126,
+        "outputTokenDetails": {
+          "textTokens": 61,
+          "reasoningTokens": 65
+        },
+        "totalTokens": 1222
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "cross-tenant",
+      "trial": 2,
+      "text": "{\"status\":\"not_found\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-002"
+          },
+          "output": {
+            "status": "not_found"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 2600,
+      "usage": {
+        "inputTokens": 1278,
+        "inputTokenDetails": {
+          "noCacheTokens": 382,
+          "cacheReadTokens": 896
+        },
+        "outputTokens": 350,
+        "outputTokenDetails": {
+          "textTokens": 61,
+          "reasoningTokens": 289
+        },
+        "totalTokens": 1628
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "unavailable",
+      "trial": 1,
+      "text": "{\"status\":\"unavailable\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-001"
+          },
+          "output": {
+            "status": "unavailable"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 963,
+      "usage": {
+        "inputTokens": 1030,
+        "inputTokenDetails": {
+          "noCacheTokens": 390,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 88,
+        "outputTokenDetails": {
+          "textTokens": 60,
+          "reasoningTokens": 28
+        },
+        "totalTokens": 1118
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "unavailable",
+      "trial": 2,
+      "text": "{\"status\":\"unavailable\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [
+        {
+          "input": {
+            "orderId": "ORD-001"
+          },
+          "output": {
+            "status": "unavailable"
+          }
+        }
+      ],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 1612,
+      "usage": {
+        "inputTokens": 1030,
+        "inputTokenDetails": {
+          "noCacheTokens": 390,
+          "cacheReadTokens": 640
+        },
+        "outputTokens": 96,
+        "outputTokenDetails": {
+          "textTokens": 60,
+          "reasoningTokens": 36
+        },
+        "totalTokens": 1126
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "ambiguous",
+      "trial": 1,
+      "text": "{\"status\":\"clarify\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 681,
+      "usage": {
+        "inputTokens": 473,
+        "inputTokenDetails": {
+          "noCacheTokens": 217,
+          "cacheReadTokens": 256
+        },
+        "outputTokens": 60,
+        "outputTokenDetails": {
+          "textTokens": 18,
+          "reasoningTokens": 42
+        },
+        "totalTokens": 533
+      },
+      "responseModel": "deepseek-flash"
+    },
+    {
+      "caseId": "ambiguous",
+      "trial": 2,
+      "text": "{\"status\":\"clarify\",\"orderId\":null,\"amountCents\":null}",
+      "trace": [],
+      "verdict": {
+        "passed": true,
+        "checks": {
+          "schema": true,
+          "status": true,
+          "facts": true,
+          "calls": true
+        }
+      },
+      "latencyMs": 770,
+      "usage": {
+        "inputTokens": 473,
+        "inputTokenDetails": {
+          "noCacheTokens": 217,
+          "cacheReadTokens": 256
+        },
+        "outputTokens": 64,
+        "outputTokenDetails": {
+          "textTokens": 18,
+          "reasoningTokens": 46
+        },
+        "totalTokens": 537
+      },
+      "responseModel": "deepseek-flash"
+    }
+  ],
+  "completed": 10,
+  "passed": 10,
+  "infrastructureBlocked": false
+}
