@@ -1,0 +1,81 @@
+{
+  "allAttempts": [
+    {
+      "mode": "fixed",
+      "attempts": 14,
+      "graded": 14,
+      "passed": 14,
+      "modelRequests": 28,
+      "toolAttempts": 46,
+      "totalTokens": 25854,
+      "medianMs": 2851.6666999999998,
+      "outcomes": {
+        "resolved": 8,
+        "ask": 2,
+        "handoff": 4
+      }
+    },
+    {
+      "mode": "conditional",
+      "attempts": 14,
+      "graded": 13,
+      "passed": 13,
+      "modelRequests": 20,
+      "toolAttempts": 22,
+      "totalTokens": 16822,
+      "medianMs": 1667.4457000000002,
+      "outcomes": {
+        "resolved": 7,
+        "ask": 2,
+        "handoff": 4
+      }
+    },
+    {
+      "mode": "agent",
+      "attempts": 14,
+      "graded": 14,
+      "passed": 14,
+      "modelRequests": 26,
+      "toolAttempts": 26,
+      "totalTokens": 26218,
+      "medianMs": 2051.87785,
+      "outcomes": {
+        "resolved": 8,
+        "ask": 2,
+        "handoff": 4
+      }
+    }
+  ],
+  "matchedCompletedTrials": [
+    {
+      "mode": "fixed",
+      "attempts": 13,
+      "passed": 13,
+      "modelRequests": 26,
+      "toolAttempts": 43,
+      "totalTokens": 24130,
+      "medianMs": 2792.3174999999974
+    },
+    {
+      "mode": "conditional",
+      "attempts": 13,
+      "passed": 13,
+      "modelRequests": 20,
+      "toolAttempts": 22,
+      "totalTokens": 16822,
+      "medianMs": 1667.4457000000002
+    },
+    {
+      "mode": "agent",
+      "attempts": 13,
+      "passed": 13,
+      "modelRequests": 23,
+      "toolAttempts": 24,
+      "totalTokens": 23354,
+      "medianMs": 1901.6702999999998
+    }
+  ],
+  "excludedKeys": [
+    "shipping:1"
+  ]
+}

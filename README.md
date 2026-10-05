@@ -6,6 +6,7 @@
 
 | 目录 | 主题 | 运行时 | 状态 |
 | --- | --- | --- | --- |
+| [`ticket-workflow-vs-agent`](./ticket-workflow-vs-agent/) | 工单固定流程、条件流程与 Agent 循环对比 | Node.js 25.8.2 | 11 项测试；42 次模型尝试，41 次结构化通过、1 次执行异常；含文案反例 |
 | [`image-lazy-loading-boundaries`](./image-lazy-loading-boundaries/) | 全部正常、全部懒加载与混合策略的图片加载边界 | Node.js 25.8.2、Chromium 151 | 19 项行为检查；两种样式延迟、每组 3 轮测量 |
 | [`content-visibility-vs-virtual-list`](./content-visibility-vs-virtual-list/) | 长页面的普通渲染、CSS 跳过渲染与已知高度窗口化对比 | Node.js 25.8.2、Chromium 151 | 32 项断言与五轮测量 |
 | [`ai-app-testing-layers`](./ai-app-testing-layers/) | AI 应用的状态测试、工具契约与真实模型冒烟评估 | Node.js 25.8.2、npm 11.9.0 | 16 项确定性测试通过；真实模型 10 次窄任务通过 |
