@@ -1,0 +1,2170 @@
+{
+  "environment": {
+    "node": "v25.8.2",
+    "browser": "151.0.7922.34",
+    "os": "win32 10.0.26200",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13500H",
+    "viewport": "1280x900",
+    "network": {
+      "latencyMs": 80,
+      "downloadBytesPerSecond": 512000
+    },
+    "assetSizes": {
+      "hero": 321263,
+      "card": 116323
+    }
+  },
+  "method": "3 cold contexts per mode per CSS delay; rotated order; no CPU throttle; 5s cutoff from navigation; LCP sampled before scroll; jump to last card then decode + two rAF; synthetic PNGs, localhost HTTP/1.1; Network.dataReceived encoded bytes excludes headers and may have protocol buffering; resource transferSize includes only completed requests; shift sum is diagnostic, not session-window CLS",
+  "summary": [
+    {
+      "mode": "eager",
+      "cssDelay": 0,
+      "lcpMs": 3376,
+      "heroStartMs": 107.30000007152557,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2466945,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 2216.6999999284744
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 0,
+      "lcpMs": 3348,
+      "heroStartMs": 235.5,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2396445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 2462
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 0,
+      "lcpMs": 3372,
+      "heroStartMs": 111.39999997615814,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2465445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 3434.7999999523163
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 600,
+      "lcpMs": 3520,
+      "heroStartMs": 119.10000002384186,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2453445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 3498
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 600,
+      "lcpMs": 3824,
+      "heroStartMs": 758.5999999046326,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2141007,
+      "completedTransferBytesAt5s": 1604416,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 2890.399999976158
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 600,
+      "lcpMs": 3496,
+      "heroStartMs": 114.39999997615814,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2457945,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "jumpReadyMs": 2273.100000023842
+    }
+  ],
+  "samples": [
+    {
+      "mode": "eager",
+      "cssDelay": 0,
+      "round": 0,
+      "cutoffMs": 5100,
+      "lcpMs": 3376,
+      "lcpId": "hero",
+      "heroStartMs": 118.70000004768372,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2465445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3569.899999976158
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 118.70000004768372,
+          "end": 3361.899999976158,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 118.79999995231628,
+          "end": 1572.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 118.79999995231628,
+          "end": 1573,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 118.89999997615814,
+          "end": 1573.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 118.89999997615814,
+          "end": 1574.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 118.89999997615814,
+          "end": 1620.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 119.29999995231628,
+          "end": 3004.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 119.70000004768372,
+          "end": 3020.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 119.79999995231628,
+          "end": 3036,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 119.89999997615814,
+          "end": 3035.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 120.39999997615814,
+          "end": 3051,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 120.39999997615814,
+          "end": 4399.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 120.60000002384186,
+          "end": 4414.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 120.60000002384186,
+          "end": 4446.200000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 120.70000004768372,
+          "end": 4462.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 120.79999995231628,
+          "end": 4465.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 120.79999995231628,
+          "end": 4583.899999976158,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 0,
+      "round": 0,
+      "cutoffMs": 5084.600000023842,
+      "lcpMs": 3472,
+      "lcpId": "hero",
+      "heroStartMs": 235.5,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2396445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3594.2999999523163
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 235.5,
+          "end": 3461.1999999284744,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 235.79999995231628,
+          "end": 1696.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 235.79999995231628,
+          "end": 1696.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 235.79999995231628,
+          "end": 1728.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 235.79999995231628,
+          "end": 1728.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 235.79999995231628,
+          "end": 1699.8999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 235.89999997615814,
+          "end": 3132.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 235.89999997615814,
+          "end": 3135.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 235.89999997615814,
+          "end": 3146.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 236,
+          "end": 3162.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 236,
+          "end": 3178,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 236.10000002384186,
+          "end": 4535.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 236.10000002384186,
+          "end": 4566.199999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 236.10000002384186,
+          "end": 4568,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 236.10000002384186,
+          "end": 4583,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 236.19999992847443,
+          "end": 4585.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 236.19999992847443,
+          "end": 4649.799999952316,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 0,
+      "round": 0,
+      "cutoffMs": 5075.799999952316,
+      "lcpMs": 3388,
+      "lcpId": "hero",
+      "heroStartMs": 111.39999997615814,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2465445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2194.1999999284744
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 111.39999997615814,
+          "end": 3377.5,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 111.60000002384186,
+          "end": 1538.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 111.69999992847443,
+          "end": 1553.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 111.79999995231628,
+          "end": 1553.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 111.89999997615814,
+          "end": 1568.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 112,
+          "end": 1599.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 112.10000002384186,
+          "end": 2954.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 234.39999997615814,
+          "end": 2986.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 235,
+          "end": 3002,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 235.10000002384186,
+          "end": 3002.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 235.19999992847443,
+          "end": 3017.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 235.19999992847443,
+          "end": 4324.199999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 235.29999995231628,
+          "end": 4402.699999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 235.29999995231628,
+          "end": 4434.699999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 235.39999997615814,
+          "end": 4417.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 235.5,
+          "end": 4433.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 235.5,
+          "end": 4668.100000023842,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 0,
+      "round": 1,
+      "cutoffMs": 5087,
+      "lcpMs": 3348,
+      "lcpId": "hero",
+      "heroStartMs": 235.19999992847443,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2399445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2353.1999999284744
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 235.19999992847443,
+          "end": 3339.600000023842,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 235.39999997615814,
+          "end": 1676.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 235.5,
+          "end": 1677.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 235.60000002384186,
+          "end": 1692.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 235.69999992847443,
+          "end": 1693,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 235.79999995231628,
+          "end": 1694.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 235.79999995231628,
+          "end": 3124.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 236,
+          "end": 3139.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 236,
+          "end": 3140.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 236.10000002384186,
+          "end": 3141.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 236.19999992847443,
+          "end": 3154.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 236.29999995231628,
+          "end": 4540.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 236.39999997615814,
+          "end": 4571.199999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 236.39999997615814,
+          "end": 4571.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 236.5,
+          "end": 4571.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 236.60000002384186,
+          "end": 4586.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 236.60000002384186,
+          "end": 4618,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 0,
+      "round": 1,
+      "cutoffMs": 5108.5,
+      "lcpMs": 3240,
+      "lcpId": "hero",
+      "heroStartMs": 114.59999990463257,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2465445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3588.5
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 114.59999990463257,
+          "end": 3230.1999999284744,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 114.69999992847443,
+          "end": 1559.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 114.79999995231628,
+          "end": 1560,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 114.79999995231628,
+          "end": 1560.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 114.89999997615814,
+          "end": 1560.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 114.89999997615814,
+          "end": 1607,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 115,
+          "end": 3013.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 239.79999995231628,
+          "end": 3013.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 240.09999990463257,
+          "end": 3029.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 240.29999995231628,
+          "end": 3013.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 240.5,
+          "end": 3044.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 240.59999990463257,
+          "end": 4437,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 240.69999992847443,
+          "end": 4439.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 240.89999997615814,
+          "end": 4451.699999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 241,
+          "end": 4467.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 241,
+          "end": 4468.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 241.09999990463257,
+          "end": 4513.399999976158,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 0,
+      "round": 1,
+      "cutoffMs": 5082.600000023842,
+      "lcpMs": 3500,
+      "lcpId": "hero",
+      "heroStartMs": 104.5,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2474445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2141.1999999284744
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 104.5,
+          "end": 3492.899999976158,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 104.60000002384186,
+          "end": 1519.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 104.70000004768372,
+          "end": 1535.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 104.79999995231628,
+          "end": 1551.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 104.79999995231628,
+          "end": 1566.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 104.89999997615814,
+          "end": 1598.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 105,
+          "end": 2930.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 105,
+          "end": 2946.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 105.10000002384186,
+          "end": 2976.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 105.29999995231628,
+          "end": 2992.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 105.29999995231628,
+          "end": 3008.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 105.39999997615814,
+          "end": 4304.200000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 105.5,
+          "end": 4335.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 105.5,
+          "end": 4382,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 105.60000002384186,
+          "end": 4397.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 105.70000004768372,
+          "end": 4414.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 105.79999995231628,
+          "end": 4834,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 0,
+      "round": 2,
+      "cutoffMs": 5077,
+      "lcpMs": 3372,
+      "lcpId": "hero",
+      "heroStartMs": 102.20000004768372,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2468445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3434.7999999523163
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 102.20000004768372,
+          "end": 3363.2999999523163,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 102.29999995231628,
+          "end": 1533.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 102.39999997615814,
+          "end": 1534.8999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 102.39999997615814,
+          "end": 1536.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 102.5,
+          "end": 1548.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 102.60000002384186,
+          "end": 1595.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 102.70000004768372,
+          "end": 2972,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 230.39999997615814,
+          "end": 2975.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 230.79999995231628,
+          "end": 2987.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 230.89999997615814,
+          "end": 2988.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 230.89999997615814,
+          "end": 3018.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 230.89999997615814,
+          "end": 4385.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 231.10000002384186,
+          "end": 4401.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 231.10000002384186,
+          "end": 4416.700000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 231.10000002384186,
+          "end": 4417.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 231.20000004768372,
+          "end": 4433.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 231.29999995231628,
+          "end": 4510.299999952316,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 0,
+      "round": 2,
+      "cutoffMs": 5082.399999976158,
+      "lcpMs": 3348,
+      "lcpId": "hero",
+      "heroStartMs": 107.30000007152557,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2466945,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2216.6999999284744
+      },
+      "resources": [
+        {
+          "url": "/img/0.png",
+          "start": 107.30000007152557,
+          "end": 1546.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/hero.png",
+          "start": 107.30000007152557,
+          "end": 3336.8000000715256,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/1.png",
+          "start": 107.39999997615814,
+          "end": 1546.8000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 107.5,
+          "end": 1547.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 107.5,
+          "end": 1562.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 107.60000002384186,
+          "end": 1592.8999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 107.70000004768372,
+          "end": 2977.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 107.70000004768372,
+          "end": 2993.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 107.80000007152557,
+          "end": 3008.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 107.89999997615814,
+          "end": 3008.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 107.89999997615814,
+          "end": 3024.3000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 108,
+          "end": 4376.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 108.10000002384186,
+          "end": 4423.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 108.10000002384186,
+          "end": 4425,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 108.10000002384186,
+          "end": 4439.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 108.20000004768372,
+          "end": 4442.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 108.20000004768372,
+          "end": 4550.300000071526,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 0,
+      "round": 2,
+      "cutoffMs": 5088.5,
+      "lcpMs": 3304,
+      "lcpId": "hero",
+      "heroStartMs": 265.39999997615814,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2363445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2462
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 265.39999997615814,
+          "end": 3285.399999976158,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 266.8000000715256,
+          "end": 1734.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 267,
+          "end": 1734.3999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 267.10000002384186,
+          "end": 1734.3000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 267.10000002384186,
+          "end": 1735.3000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 267.2000000476837,
+          "end": 1749.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 267.3000000715256,
+          "end": 3192.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 267.39999997615814,
+          "end": 3192.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 267.5,
+          "end": 3193.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 267.5,
+          "end": 3193.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 267.60000002384186,
+          "end": 3196.8000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 267.7000000476837,
+          "end": 4612.200000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 267.8000000715256,
+          "end": 4642.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 267.89999997615814,
+          "end": 4643.300000071526,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 268,
+          "end": 4643.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 268.10000002384186,
+          "end": 4643.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 268.10000002384186,
+          "end": 4659.100000023842,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 600,
+      "round": 0,
+      "cutoffMs": 5047.5,
+      "lcpMs": 3532,
+      "lcpId": "hero",
+      "heroStartMs": 114.39999997615814,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2453445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2134.600000023842
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 114.39999997615814,
+          "end": 3522.399999976158,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 114.5,
+          "end": 1425.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 114.60000002384186,
+          "end": 1456.8000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 114.70000004768372,
+          "end": 1472.8999999761581,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 114.80000007152557,
+          "end": 1472.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 114.80000007152557,
+          "end": 2045.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 114.89999997615814,
+          "end": 2823.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 115,
+          "end": 2900.3000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 115.10000002384186,
+          "end": 2900.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 115.10000002384186,
+          "end": 2900.8000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 115.20000004768372,
+          "end": 3383.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 115.30000007152557,
+          "end": 4175.700000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 115.39999997615814,
+          "end": 4302.300000071526,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 115.39999997615814,
+          "end": 4304,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 115.5,
+          "end": 4317.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 115.5,
+          "end": 4720.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 115.5,
+          "end": 4859.399999976158,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 600,
+      "round": 0,
+      "cutoffMs": 5038.100000023842,
+      "lcpMs": 3940,
+      "lcpId": "hero",
+      "heroStartMs": 751.6000000238419,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2127411,
+      "completedTransferBytesAt5s": 1604416,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2890.399999976158
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 751.6000000238419,
+          "end": 3925.2000000476837,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 751.7000000476837,
+          "end": 2190.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 751.7000000476837,
+          "end": 2205.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 751.7999999523163,
+          "end": 2206.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 751.7999999523163,
+          "end": 2207.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 752,
+          "end": 2221.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 752.2000000476837,
+          "end": 3627.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 752.2000000476837,
+          "end": 3642.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 752.2999999523163,
+          "end": 3658.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 752.2999999523163,
+          "end": 3658.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 752.3999999761581,
+          "end": 3660,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 752.3999999761581,
+          "end": 5020.700000047684,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 600,
+      "round": 0,
+      "cutoffMs": 5102.5,
+      "lcpMs": 3476,
+      "lcpId": "hero",
+      "heroStartMs": 112.79999995231628,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2477445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2361.100000023842
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 112.79999995231628,
+          "end": 3465.6999999284744,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 112.89999997615814,
+          "end": 1430.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 113,
+          "end": 1446,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 113,
+          "end": 1461.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 113.09999990463257,
+          "end": 1462.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 113.19999992847443,
+          "end": 2073.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 113.19999992847443,
+          "end": 2857.5999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 785.5999999046326,
+          "end": 2873.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 786,
+          "end": 2889.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 786.1999999284744,
+          "end": 2889.5999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 786.2999999523163,
+          "end": 3388.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 786.3999999761581,
+          "end": 4267.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 786.5,
+          "end": 4282.099999904633,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 786.5999999046326,
+          "end": 4297.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 786.6999999284744,
+          "end": 4313.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 786.7999999523163,
+          "end": 4712.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 786.7999999523163,
+          "end": 4776,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 600,
+      "round": 1,
+      "cutoffMs": 5101.100000023842,
+      "lcpMs": 3784,
+      "lcpId": "hero",
+      "heroStartMs": 765.6000000238419,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2151411,
+      "completedTransferBytesAt5s": 1604416,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2889
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 765.6000000238419,
+          "end": 3766.7999999523163,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 765.8999999761581,
+          "end": 2229.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 765.8999999761581,
+          "end": 2230.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 765.8999999761581,
+          "end": 2230.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 766.1000000238419,
+          "end": 2233.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 766.1000000238419,
+          "end": 2231.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 766.2000000476837,
+          "end": 3675.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 766.2000000476837,
+          "end": 3689.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 766.2999999523163,
+          "end": 3678.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 766.3999999761581,
+          "end": 3690.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 766.5,
+          "end": 3692.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 766.5,
+          "end": 5072.600000023842,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 600,
+      "round": 1,
+      "cutoffMs": 5047.200000047684,
+      "lcpMs": 3580,
+      "lcpId": "hero",
+      "heroStartMs": 114.39999997615814,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2445026,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2082.9000000953674
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 114.39999997615814,
+          "end": 3556.2000000476837,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 114.5,
+          "end": 1423.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 114.70000004768372,
+          "end": 1455.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 115,
+          "end": 1470.2000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 115.20000004768372,
+          "end": 1471,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 115.5,
+          "end": 2062.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 115.60000002384186,
+          "end": 2827.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 775.3999999761581,
+          "end": 2889.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 776.2000000476837,
+          "end": 2892.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 776.3999999761581,
+          "end": 2904.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 777.2000000476837,
+          "end": 3403.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 777.3999999761581,
+          "end": 4178,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 777.6000000238419,
+          "end": 4287.200000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 777.7000000476837,
+          "end": 4302.299999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 777.8999999761581,
+          "end": 4318,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 778,
+          "end": 4752.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 778.1000000238419,
+          "end": 4905.100000023842,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 600,
+      "round": 1,
+      "cutoffMs": 5074.900000095367,
+      "lcpMs": 3516,
+      "lcpId": "hero",
+      "heroStartMs": 120.90000009536743,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2457945,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3498
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 120.90000009536743,
+          "end": 3497.5,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 121,
+          "end": 1463.3000000715256,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 121.10000002384186,
+          "end": 1480.1000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 121.20000004768372,
+          "end": 1481.9000000953674,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 121.30000007152557,
+          "end": 1483,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 121.40000009536743,
+          "end": 2025.9000000953674,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 121.5,
+          "end": 2906.9000000953674,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 121.60000002384186,
+          "end": 2907.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 121.60000002384186,
+          "end": 2911.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 121.80000007152557,
+          "end": 2922.7000000476837,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 121.80000007152557,
+          "end": 3341.9000000953674,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 121.80000007152557,
+          "end": 4317.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 121.90000009536743,
+          "end": 4317.300000071526,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 122,
+          "end": 4333.200000047684,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 122.10000002384186,
+          "end": 4333.400000095367,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 122.10000002384186,
+          "end": 4626.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 122.10000002384186,
+          "end": 4764.300000071526,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "mixed",
+      "cssDelay": 600,
+      "round": 2,
+      "cutoffMs": 5083.899999976158,
+      "lcpMs": 3496,
+      "lcpId": "hero",
+      "heroStartMs": 122.59999990463257,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2457945,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2273.100000023842
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 122.59999990463257,
+          "end": 3479.7999999523163,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 122.79999995231628,
+          "end": 1465,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 122.89999997615814,
+          "end": 1467.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 123,
+          "end": 1480.1999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 123.09999990463257,
+          "end": 1480.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 123.19999992847443,
+          "end": 2073.5999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 123.29999995231628,
+          "end": 2896.5999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 792.3999999761581,
+          "end": 2911.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 792.6999999284744,
+          "end": 2912.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 792.7999999523163,
+          "end": 2927.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 793,
+          "end": 3386.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 793,
+          "end": 4317.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 793,
+          "end": 4332.199999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 793.0999999046326,
+          "end": 4332.699999928474,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 793.1999999284744,
+          "end": 4347.599999904633,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 793.2999999523163,
+          "end": 4659.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 793.2999999523163,
+          "end": 4753.899999976158,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "eager",
+      "cssDelay": 600,
+      "round": 2,
+      "cutoffMs": 5018.799999952316,
+      "lcpMs": 3520,
+      "lcpId": "hero",
+      "heroStartMs": 119.10000002384186,
+      "initialRequests": 61,
+      "imageWireBytesAt5s": 2426445,
+      "completedTransferBytesAt5s": 2187531,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 3599.5
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 119.10000002384186,
+          "end": 3490.1999999284744,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 119.29999995231628,
+          "end": 1477.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 119.39999997615814,
+          "end": 1477.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 119.60000002384186,
+          "end": 1477.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 119.60000002384186,
+          "end": 1478.6000000238419,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 119.69999992847443,
+          "end": 2047,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 119.89999997615814,
+          "end": 2917.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 120.10000002384186,
+          "end": 2917.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 120.10000002384186,
+          "end": 2917.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 120.5,
+          "end": 2918.100000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 120.69999992847443,
+          "end": 3335.2999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/10.png",
+          "start": 120.69999992847443,
+          "end": 4335.799999952316,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/11.png",
+          "start": 120.79999995231628,
+          "end": 4336.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/12.png",
+          "start": 121,
+          "end": 4337.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/13.png",
+          "start": 121.10000002384186,
+          "end": 4339.600000023842,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/14.png",
+          "start": 121.29999995231628,
+          "end": 4614,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/15.png",
+          "start": 121.29999995231628,
+          "end": 4768,
+          "bytes": 116623
+        }
+      ]
+    },
+    {
+      "mode": "lazy",
+      "cssDelay": 600,
+      "round": 2,
+      "cutoffMs": 5072.299999952316,
+      "lcpMs": 3824,
+      "lcpId": "hero",
+      "heroStartMs": 758.5999999046326,
+      "initialRequests": 46,
+      "imageWireBytesAt5s": 2141007,
+      "completedTransferBytesAt5s": 1487793,
+      "layoutShiftSum": 0,
+      "scroll": {
+        "alreadyDecoded": false,
+        "readyMs": 2936.4000000953674
+      },
+      "resources": [
+        {
+          "url": "/img/hero.png",
+          "start": 758.5999999046326,
+          "end": 3814.0999999046326,
+          "bytes": 321563
+        },
+        {
+          "url": "/img/0.png",
+          "start": 758.6999999284744,
+          "end": 2210.6999999284744,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/1.png",
+          "start": 758.7999999523163,
+          "end": 2211.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/2.png",
+          "start": 758.7999999523163,
+          "end": 2211.399999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/3.png",
+          "start": 758.8999999761581,
+          "end": 2226.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/4.png",
+          "start": 759,
+          "end": 2225.7999999523163,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/5.png",
+          "start": 759,
+          "end": 3659.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/6.png",
+          "start": 759,
+          "end": 3660.0999999046326,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/7.png",
+          "start": 759.0999999046326,
+          "end": 3675.5,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/8.png",
+          "start": 759.1999999284744,
+          "end": 3675.899999976158,
+          "bytes": 116623
+        },
+        {
+          "url": "/img/9.png",
+          "start": 759.2999999523163,
+          "end": 3676.899999976158,
+          "bytes": 116623
+        }
+      ]
+    }
+  ]
+}

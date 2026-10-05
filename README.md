@@ -6,6 +6,7 @@
 
 | 目录 | 主题 | 运行时 | 状态 |
 | --- | --- | --- | --- |
+| [`image-lazy-loading-boundaries`](./image-lazy-loading-boundaries/) | 全部正常、全部懒加载与混合策略的图片加载边界 | Node.js 25.8.2、Chromium 151 | 19 项行为检查；两种样式延迟、每组 3 轮测量 |
 | [`content-visibility-vs-virtual-list`](./content-visibility-vs-virtual-list/) | 长页面的普通渲染、CSS 跳过渲染与已知高度窗口化对比 | Node.js 25.8.2、Chromium 151 | 32 项断言与五轮测量 |
 | [`ai-app-testing-layers`](./ai-app-testing-layers/) | AI 应用的状态测试、工具契约与真实模型冒烟评估 | Node.js 25.8.2、npm 11.9.0 | 16 项确定性测试通过；真实模型 10 次窄任务通过 |
 | [`typescript-7-migration`](./typescript-7-migration/) | TypeScript 7 迁移与 6/7 双版本验证 | Node.js 25.8.2、npm 11.9.0 | 已验证 |
