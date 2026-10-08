@@ -1,0 +1,4 @@
+.playwright-cli/
+.verify/
+output/playwright/
+playwright.config.json

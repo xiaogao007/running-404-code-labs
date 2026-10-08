@@ -1,0 +1,23 @@
+{
+  "name": "sourcemap-debug-id-verification",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify.mjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@sentry/browser": "11.6.0"
+  },
+  "devDependencies": {
+    "@jridgewell/trace-mapping": "0.3.31",
+    "@playwright/cli": "0.1.22",
+    "@sentry/cli": "3.8.0",
+    "@types/node": "26.6.4",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}

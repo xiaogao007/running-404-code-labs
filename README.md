@@ -6,6 +6,7 @@
 
 | 目录 | 主题 | 运行时 | 状态 |
 | --- | --- | --- | --- |
+| [`sourcemap-debug-id-verification`](./sourcemap-debug-id-verification/) | Source Map、Debug ID 与浏览器错误事件的产物匹配验证 | Node.js 25.8.2、Chromium 155.0.8059.12 | 16 项断言与 TypeScript 检查；仅本地验证 |
 | [`ticket-workflow-vs-agent`](./ticket-workflow-vs-agent/) | 工单固定流程、条件流程与 Agent 循环对比 | Node.js 25.8.2 | 11 项测试；42 次模型尝试，41 次结构化通过、1 次执行异常；含文案反例 |
 | [`image-lazy-loading-boundaries`](./image-lazy-loading-boundaries/) | 全部正常、全部懒加载与混合策略的图片加载边界 | Node.js 25.8.2、Chromium 151 | 19 项行为检查；两种样式延迟、每组 3 轮测量 |
 | [`content-visibility-vs-virtual-list`](./content-visibility-vs-virtual-list/) | 长页面的普通渲染、CSS 跳过渲染与已知高度窗口化对比 | Node.js 25.8.2、Chromium 151 | 32 项断言与五轮测量 |
