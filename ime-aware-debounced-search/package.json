@@ -1,0 +1,9 @@
+{
+  "name": "ime-aware-debounced-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "verify": "node scripts/verify.mjs", "serve": "node scripts/serve.mjs" },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "@playwright/cli": "0.1.22" }
+}

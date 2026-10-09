@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>IME-aware debounce lab</title></head>
+<body>
+  <h1>IME-aware debounce lab</h1>
+  <p>Automated composition events are synthetic; this page does not exercise an OS IME.</p>
+  <p id="clock-mode"></p>
+  <label for="search">Search</label><input id="search" autocomplete="off">
+  <button id="advance">Advance fake clock 300 ms</button>
+  <pre id="logs">[]</pre>
+  <script type="module" src="/src/browser-fixture.js"></script>
+</body>
+</html>

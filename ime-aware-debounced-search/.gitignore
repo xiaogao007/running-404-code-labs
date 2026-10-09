@@ -1,0 +1,3 @@
+.verify/
+.playwright-cli/
+output/playwright/
