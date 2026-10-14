@@ -1,0 +1,13 @@
+{
+  "name": "html-in-canvas-interaction-boundaries",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "verify": "node scripts/verify.mjs",
+    "check": "node --check src/lab.js && node --check src/geometry.js"
+  },
+  "devDependencies": { "@playwright/cli": "0.1.22" }
+}

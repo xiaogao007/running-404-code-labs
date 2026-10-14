@@ -1,0 +1,5 @@
+node_modules/
+.verify/
+.playwright-cli/
+premium-audit.json
+output/playwright/

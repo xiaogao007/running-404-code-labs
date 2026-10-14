@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Canvas 按钮交互实验 · 404 Code Labs</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">404 CODE LABS / 浏览器实验</p>
+      <h1>按钮画出来了，<br>点击区域跟上了吗？</h1>
+      <p class="intro">左侧把真实 HTML 按钮绘入 Canvas，右侧保留 DOM 覆盖层。移动和缩放同一张卡片，再试鼠标、Tab、Enter 与空格。</p>
+      <p id="capabilities" class="capabilities">正在检测实验 API…</p>
+    </header>
+
+    <section class="controls" aria-label="画布控制">
+      <label for="zoom">缩放 <output id="zoom-value" for="zoom">100%</output><input id="zoom" type="range" min="0.5" max="1.5" step="0.1" value="1"></label>
+      <label for="pan-x">水平移动 <output id="pan-x-value" for="pan-x">0</output><input id="pan-x" type="range" min="0" max="180" step="10" value="0"></label>
+      <div class="actions"><button id="move" type="button">移动卡片</button><button id="reset" type="button">恢复初始位置</button></div>
+      <label class="check"><input id="freeze" type="checkbox">故意停止左侧按钮的几何同步</label>
+      <label class="check"><input id="hide-actions" type="checkbox">隐藏两侧按钮</label>
+    </section>
+
+    <section class="comparison" aria-label="两种绘制方案">
+      <section class="panel" aria-labelledby="native-heading">
+        <div class="panel-heading"><h2 id="native-heading">HTML-in-Canvas</h2><span id="native-branch">实验分支</span></div>
+        <div class="scene" id="native-scene">
+          <canvas id="native-canvas" width="600" height="340" aria-label="HTML-in-Canvas 实验画布">
+            <article id="native-card" class="task-card" drawable>
+              <p class="card-kind">画布里的真实 HTML</p><h3>整理项目资料</h3><p class="card-description">原生按钮，独立绘制与命中检测。</p>
+              <button id="native-action" class="task-action" type="button" drawable aria-label="执行画布任务">执行任务 <span aria-hidden="true">↗</span></button>
+            </article>
+          </canvas>
+        </div>
+        <p id="native-metric" class="metric">等待首次绘制</p>
+        <p id="native-status" role="status" class="status">画布任务执行 0 次</p>
+      </section>
+
+      <section class="panel" aria-labelledby="overlay-heading">
+        <div class="panel-heading"><h2 id="overlay-heading">DOM 覆盖层</h2><span>对照方案</span></div>
+        <div class="scene" id="overlay-scene">
+          <canvas id="overlay-canvas" width="600" height="340" aria-hidden="true"></canvas>
+          <div class="dom-layer">
+            <article id="overlay-card" class="task-card">
+              <p class="card-kind">画布上方的 DOM</p><h3>整理项目资料</h3><p class="card-description">同一份坐标模型，维护 CSS 变换。</p>
+              <button id="overlay-action" class="task-action" type="button" aria-label="执行覆盖层任务">执行任务 <span aria-hidden="true">↗</span></button>
+            </article>
+          </div>
+        </div>
+        <p id="overlay-metric" class="metric">等待首次布局</p>
+        <p id="overlay-status" role="status" class="status">覆盖层任务执行 0 次</p>
+      </section>
+    </section>
+
+    <section class="evidence" aria-labelledby="evidence-heading">
+      <h2 id="evidence-heading">如何读这个实验</h2>
+      <p>蓝框标记按钮的绘制位置，粉色虚线标记浏览器报告的点击区域。正常同步时两者重合；停止同步后再移动卡片，可以观察二者分离。</p>
+      <p>自动检查覆盖鼠标命中、键盘激活、DOM 几何和无障碍树里的按钮角色与名称。它没有测试真实屏幕阅读器，也不代表跨浏览器兼容或 WCAG 完整合规。</p>
+      <p id="event-log" class="event-log">尚无按钮事件</p>
+    </section>
+    <footer><a href="https://developer.chrome.com/blog/html-in-canvas-ot-changes">Chrome 官方更新</a><a href="https://github.com/WICG/html-in-canvas">WICG 提案</a></footer>
+  </main>
+  <script type="module" src="/src/lab.js"></script>
+</body>
+</html>

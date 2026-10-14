@@ -1,0 +1,53 @@
+:root {
+  --paper: #f6f8fc; --surface: #ffffff; --ink: #172844; --muted: #52627c;
+  --line: #dce4ee; --primary: #137e9c; --focus: #b31e63;
+  --body-font: "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --display-font: "Bahnschrift", "Microsoft YaHei", sans-serif;
+  --mono-font: "Consolas", monospace;
+  color: var(--ink); background: var(--paper); font-family: var(--body-font);
+  scrollbar-color: var(--muted) var(--paper); scrollbar-width: thin;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+main { width: min(1280px,100%); margin: auto; padding: 40px 30px; }
+.eyebrow { margin: 0 0 18px; color: var(--primary); font: 600 12px var(--mono-font); letter-spacing: 0.08em; }
+h1 { margin: 0; font: 650 clamp(30px,4.4vw,56px)/1.2 var(--display-font); letter-spacing: -0.03em; }
+.intro { max-width: 790px; line-height: 1.8; margin: 20px 0 12px; }
+.capabilities { font-size: 13px; color: var(--muted); min-height: 22px; }
+.controls { margin: 28px 0; padding: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.controls > label:not(.check) { display: grid; grid-template-columns: 1fr auto; gap: 8px; width: 200px; font-size: 13px; }
+input[type="range"] { grid-column: 1/-1; width: 100%; accent-color: var(--primary); cursor: pointer; }
+.check { font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.check input { width: 18px; height: 18px; accent-color: var(--primary); }
+button { font-family: inherit; font-size: 13px; cursor: pointer; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); padding: 10px 14px; }
+button:hover { background: var(--paper); }
+button:active { background: var(--line); }
+button:focus-visible,input:focus-visible,a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.comparison { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+.panel { min-width: 0; }
+.panel-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 12px; }
+h2 { margin: 0; font: 600 20px/1.4 var(--display-font); }
+.panel-heading span { color: var(--muted); font-size: 11px; }
+.scene { position: relative; width: 100%; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: clip; }
+canvas { display: block; width: 100%; height: auto; aspect-ratio: 600/340; }
+.task-card { position: relative; width: 280px; height: 170px; padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); font-family: var(--body-font); }
+.card-kind { margin: 0 0 10px; color: var(--primary); font-size: 11px; line-height: 14px; }
+.task-card h3 { margin: 0; font-size: 20px; line-height: 26px; }
+.card-description { margin: 8px 0 0; font-size: 11px; line-height: 16px; color: var(--muted); }
+.task-action { position: absolute; left: 20px; top: 106px; width: 240px; height: 44px; display: flex; align-items: center; justify-content: space-between; color: var(--surface); background: var(--ink); border-color: var(--ink); }
+.task-action:hover { color: var(--surface); background: var(--primary); }
+.task-action:active { background: var(--focus); }
+.dom-layer { position: absolute; inset: 0; pointer-events: none; }
+.dom-layer .task-card { position: absolute; left: 0; top: 0; transform-origin: 0 0; pointer-events: auto; }
+.metric { margin: 12px 0 8px; font: 11px/1.6 var(--mono-font); color: var(--muted); min-height: 36px; }
+.status { font-size: 13px; margin: 0; padding-top: 8px; border-top: 1px solid var(--line); }
+.evidence { margin-top: 32px; max-width: 850px; }
+.evidence p { font-size: 13px; line-height: 1.85; }
+.event-log { font-family: var(--mono-font); color: var(--primary); min-height: 24px; }
+footer { display: flex; gap: 24px; margin-top: 24px; font-size: 12px; }
+a { color: var(--primary); }
+@media(max-width:760px) { main { padding: 24px 16px; } .comparison { grid-template-columns: 1fr; gap: 28px; } .controls { padding: 14px; } .controls > label:not(.check) { width: min(200px,100%); } .panel-heading { flex-wrap: wrap; } }
+@media(prefers-reduced-motion:reduce) { * { scroll-behavior: auto; } }
